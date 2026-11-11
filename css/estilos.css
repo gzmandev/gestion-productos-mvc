@@ -1,0 +1,98 @@
+/* Identidad visual: paleta #31393C, #2176FF, #33A1FD, #FDCA40, #F79824 */
+:root {
+    --bs-primary: #2176FF;
+    --bs-primary-rgb: 33, 118, 255;
+    --bs-info: #33A1FD;
+    --bs-warning: #FDCA40;
+    --bs-dark: #31393C;
+    --bs-dark-rgb: 49, 57, 60;
+    --bs-body-color: #31393C;
+    --bs-body-bg: #F3F6FB;
+    --bs-body-font-family: 'Outfit', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    --azul-oscuro: #1B63D9;
+    --naranja-oscuro: #E0841A;
+}
+
+body { font-family: var(--bs-body-font-family); }
+
+/* Barra superior */
+.navbar-marca {
+    background: linear-gradient(90deg, #31393C 0%, #2176FF 100%);
+    border-bottom: 4px solid #F79824;
+}
+.navbar-marca .navbar-brand { font-weight: 600; letter-spacing: .2px; }
+.navbar-marca .navbar-text { color: #FDCA40; }
+
+/* Tarjeta principal */
+.tarjeta {
+    border: 0;
+    border-radius: 18px;
+    box-shadow: 0 12px 32px rgba(49, 57, 60, .12);
+}
+.titulo-principal {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #31393C;
+    border-left: 6px solid #F79824;
+    padding-left: 12px;
+}
+.seccion-titulo {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    color: #31393C;
+}
+
+/* Botones */
+.btn-primario {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #2176FF;
+    --bs-btn-border-color: #2176FF;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--azul-oscuro);
+    --bs-btn-hover-border-color: var(--azul-oscuro);
+    --bs-btn-active-bg: var(--azul-oscuro);
+    --bs-btn-active-border-color: var(--azul-oscuro);
+    font-weight: 600;
+}
+.btn-accion {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #F79824;
+    --bs-btn-border-color: #F79824;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--naranja-oscuro);
+    --bs-btn-hover-border-color: var(--naranja-oscuro);
+    font-weight: 600;
+}
+
+/* Campo de búsqueda */
+.input-group-text { background: #fff; color: #2176FF; }
+.form-control:focus { border-color: #33A1FD; box-shadow: 0 0 0 .2rem rgba(51, 161, 253, .25); }
+
+/* Tabla */
+.tabla-productos thead th {
+    background: #31393C;
+    color: #fff;
+    font-size: .8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    border: 0;
+    padding: .9rem .75rem;
+}
+.tabla-productos tbody td { padding: .9rem .75rem; border-color: #E6EBF2; }
+.tabla-productos tbody tr:hover { background: #EEF5FF; }
+.badge-categoria {
+    background: #FDCA40;
+    color: #31393C;
+    font-weight: 600;
+    border-radius: 999px;
+    padding: .4em .8em;
+}
+
+/* Alertas con la paleta */
+.alert-success { --bs-alert-color: #1B4F9E; --bs-alert-bg: #E9F2FF; --bs-alert-border-color: #9CC4FF; }
+.alert-danger  { --bs-alert-color: #31393C; --bs-alert-bg: #FFF1DF; --bs-alert-border-color: #F79824; }
+.alert-info    { --bs-alert-color: #1D5F8F; --bs-alert-bg: #EAF6FF; --bs-alert-border-color: #33A1FD; }
+
+.pie-pagina { color: #6B7480; padding: 1.5rem 0 0; }

@@ -1,0 +1,5 @@
+# Root global
+.DS_Store
+Thumbs.db
+*.log
+.env
